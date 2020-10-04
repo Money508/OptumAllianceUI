@@ -1,2 +1,2 @@
-# set a default LANG if it does not exist in the environment
-export LANG=${LANG:-en_US.UTF-8}
+web: bundle exec rails server -p $PORT
+web: lein run -m demo.web $PORT
